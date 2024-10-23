@@ -15,7 +15,7 @@ ring_buffer_init(&ring_buffer, buff, sizeof(buff));
 ```
 In this case, the buffer size is 64 bytes and the ring buffer can contain 63 bytes.
 
-The module provides the following functions for accessing the ring buffer (documentation can be found in [ringbuffer.h](ringbuffer.h)):
+The module provides the following functions for accessing the ring buffer (documentation can be found in [ringbuffer.h](includes/ringbuffer.h)):
 ```c
 void ring_buffer_queue(ring_buffer_t *buffer, char data);
 void ring_buffer_queue_arr(ring_buffer_t *buffer, const char *data, ring_buffer_size_t size);
